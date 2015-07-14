@@ -1,0 +1,70 @@
+<LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pabrou.sol.contacts.ContactDetailActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <include layout="@layout/layout_contact_detail" />
+        </ScrollView>
+
+        <!-- shown while getting the data from the web service-->
+        <LinearLayout
+            android:id="@+id/status_updating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLargeInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/obtaining_details"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/status_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_error"
+                android:text="@string/error_loading_details"
+                android:textSize="36sp"
+                android:alpha="0.5"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+

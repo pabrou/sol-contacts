@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/picture"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/user"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/subtitle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/favorite"
+                    android:layout_toStartOf="@+id/favorite"
+                    android:text="@string/name"
+                    android:textColor="@color/detail_subtitle"
+                    style="@android:style/TextAppearance.Holo.Small"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/subtitle_name"
+                    android:layout_toLeftOf="@+id/favorite"
+                    android:layout_toStartOf="@+id/favorite"
+                    android:text="Name"
+                    android:layout_marginTop="4dp"
+                    style="@android:style/TextAppearance.Holo.Medium"/>
+
+                <ImageView
+                    android:id="@+id/favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_favorite"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company"
+                    android:textColor="@color/detail_subtitle"
+                    style="@android:style/TextAppearance.Holo.Small"/>
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Solstice"
+                    style="@android:style/TextAppearance.Holo.Medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textColor="@color/detail_subtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@android:style/TextAppearance.Holo.Small"/>
+
+        <RelativeLayout
+            android:id="@+id/workPhoneNumberContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/workPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="555-435-4673"
+                android:phoneNumber="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/detail_subtitle"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homePhoneNumberContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/homePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="555-435-4673"
+                android:phoneNumber="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/detail_subtitle"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mobilePhoneNumberContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/mobilePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="555-435-4673"
+                android:phoneNumber="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/detail_subtitle"
+                style="@android:style/TextAppearance.Holo.Medium"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/detail_subtitle"
+            style="@android:style/TextAppearance.Holo.Small"/>
+
+        <TextView
+            android:id="@+id/addressStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="45 W, Lake St."
+            style="@android:style/TextAppearance.Holo.Medium"/>
+
+        <TextView
+            android:id="@+id/addressCityState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicago, IL"
+            style="@android:style/TextAppearance.Holo.Medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/birthdayContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday"
+            android:textColor="@color/detail_subtitle"
+            style="@android:style/TextAppearance.Holo.Small"/>
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="January 1, 1985"
+            style="@android:style/TextAppearance.Holo.Medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/detail_subtitle"
+            style="@android:style/TextAppearance.Holo.Small"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="email@solstice.com"
+            style="@android:style/TextAppearance.Holo.Medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website"
+            android:textColor="@color/detail_subtitle"
+            style="@android:style/TextAppearance.Holo.Small"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="www.solstice.com"
+            style="@android:style/TextAppearance.Holo.Medium"/>
+    </LinearLayout>
+
+</LinearLayout>

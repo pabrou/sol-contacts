@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="title_activity_contact_detail">Details</string>
+
+    <string name="contact_list_empty">No contacts</string>
+    <string name="error_loading_contacts">An error occurred while fetching the contacts</string>
+    <string name="error_loading_details">An error occurred while fetching the details</string>
+    <string name="obtaining_contact">Obtaining contacts</string>
+    <string name="obtaining_details">Obtaining details</string>
+
+
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="phone_number">Phone Numbers</string>
+    <string name="work">Work</string>
+    <string name="home">Home</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="birthday">Birthday</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+
+
+
+</resources>

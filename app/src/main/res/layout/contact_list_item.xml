@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:layout_toRightOf="@+id/picture"
+        android:layout_toEndOf="@+id/picture"
+        android:layout_alignParentTop="true"
+        android:text="Contact Name"/>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/picture"
+        android:layout_toEndOf="@+id/picture"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        android:textColor="@color/detail_subtitle"
+        android:text="555-343-6433"/>
+</RelativeLayout>
