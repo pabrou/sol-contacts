@@ -3,30 +3,30 @@
 		"name": "Buenos Aires",
 		"country": "AR",
 		"lat": -34.6075682,
-		"lon": -58.4370894,
+		"lon": -58.4370894
 	},
 	{
 		"name": "London",
 		"country": "GB",
 		"lat": 51.5073219,
-		"lon": -0.1276474,
+		"lon": -0.1276474
 	},
 	{
 		"name": "Bogota",
 		"country": "CO",
 		"lat": 4.6534649,
-		"lon": -74.0836453,
+		"lon": -74.0836453
 	},
 	{
 		"name": "Barcelona",
 		"country": "ES",
 		"lat": 41.3828939,
-		"lon": 2.1774322,
+		"lon": 2.1774322
 	},
 	{
 		"name": "Marseille",
 		"country": "FR",
 		"lat": 43.2961743,
-		"lon": 5.3699525,
+		"lon": 5.3699525
 	}
 ]
